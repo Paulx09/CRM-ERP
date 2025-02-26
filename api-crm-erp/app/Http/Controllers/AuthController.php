@@ -27,6 +27,8 @@ class AuthController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function register() {
+        // $this->authorize("create", User::class);
+
         $validator = Validator::make(request()->all(), [
             'name' => 'required',
             'email' => 'required|email|unique:users',
