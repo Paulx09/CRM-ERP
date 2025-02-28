@@ -24,8 +24,6 @@ Route::group([
  
     // 'middleware' => 'auth:api',
     'prefix' => 'auth',
-    // 'middleware' => ['auth:api'], // ,'permission:publish articles|edit articles'
- 
 ], function ($router) {
     Route::post('/register', [AuthController::class, 'register'])->name('register');
     Route::post('/login', [AuthController::class, 'login'])->name('login');
@@ -36,7 +34,6 @@ Route::group([
 
 Route::group([
     'middleware' => 'auth:api',
-    'prefix' => 'auth',
 ], function ($router) {
-    Route:: resource("roles",RolePermissionController::class);
+    Route::resource("roles",RolePermissionController::class); 
 });

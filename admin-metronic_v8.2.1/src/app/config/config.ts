@@ -40,23 +40,23 @@ export const SIDEBAR:any = [
         }
       ]
     },
-    {
-        'name': 'Sucursales',
-        'permisos': [
-          {
-            name:'Registrar',
-            permiso: 'register_sucursales',
-          },
-          {
-            name:'Editar',
-            permiso: 'edit_sucursales',
-          },
-          {
-            name:'Eliminar',
-            permiso: 'delete_sucursales',
-          }
-        ]
-      },
+    // {
+    //     'name': 'Sucursales',
+    //     'permisos': [
+    //       {
+    //         name:'Registrar',
+    //         permiso: 'register_sucursales',
+    //       },
+    //       {
+    //         name:'Editar',
+    //         permiso: 'edit_sucursales',
+    //       },
+    //       {
+    //         name:'Eliminar',
+    //         permiso: 'delete_sucursales',
+    //       }
+    //     ]
+    //   },
     {
       'name': 'Productos',
       'permisos': [
