@@ -17,6 +17,8 @@ import { FakeAPIService } from './_fake/fake-api.service';
 import { ToastrModule } from 'ngx-toastr';
 // #fake-end#
 
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+
 function appInitializer(authService: AuthService) {
   return () => {
     return new Promise((resolve) => {
@@ -47,6 +49,7 @@ function appInitializer(authService: AuthService) {
     NgbModule,
     SweetAlert2Module.forRoot(),
     ToastrModule.forRoot(), // ToastrModule added
+    NgbPaginationModule,
   ],
   providers: [
     {
